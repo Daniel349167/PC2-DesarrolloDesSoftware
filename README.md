@@ -157,6 +157,7 @@ true
 
 # Parte3: Rail 
 ### Instalando versiones recomendadas:
+
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/89b58a51-1aad-4a55-84b9-31ff8c8e2560)
 
 ### Creeando una aplicación Rails
@@ -167,12 +168,15 @@ rails new rottenpotatoes --skip-test-unit --skip-turbolinks --skip-spring
 La version de sqlite3 '~> 1.3.0' no me funciono a mí, pero con la 1.4.0 la aplicación corría bien.
 
 ### Creando la migración 'create_movies' 
+
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/a7d1c91e-1529-40ab-b4f7-053cd82254ef)
 
 ### Interactuando con la consola de ruby
+
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/0ad60f53-3cd0-475b-8948-95c9ea94c484)
 
 ### Ejecutando seeders
+
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/7f544b56-a49b-4371-89cc-bc6bd51b8e62)
 
 ## Crear rutas, acciones y vistas CRUD para películas
@@ -183,11 +187,14 @@ Rails.application.routes.draw do
   root :to => redirect('/movies')
 end
 ```
-Sale error porque aun no hemos definido un controlador ni sus vistas
+- Sale error porque aun no hemos definido un controlador ni sus vistas
+
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/bd3fe7cb-56bd-496f-9aff-800ee7a4b116)
 
 ### Creando el controlador y sus vistas
-![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/e9ba76e2-a49c-4c0c-ac56-870f67a479d8)
+
+![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/60296846-66aa-42bd-8f7b-47b26e2bf1ac)
+
 
 - Ejecutando el app rails:
 ```ruby
