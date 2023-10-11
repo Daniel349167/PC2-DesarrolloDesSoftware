@@ -34,7 +34,7 @@ faltantes = alfabeto - cadena.chars
 ```ruby
 faltantes.first
 ```
--Finalmente, se devuelve la primera letra del array faltantes. Esta es la primera letra del alfabeto que no está presente en la cadena dada.
+- Finalmente, se devuelve la primera letra del array faltantes. Esta es la primera letra del alfabeto que no está presente en la cadena dada.
 
 ## BinaryTree
 
@@ -156,4 +156,61 @@ true
 ```
 
 # Parte3: Rail 
+### Instalando versiones recomendadas:
+![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/89b58a51-1aad-4a55-84b9-31ff8c8e2560)
+
+### Creeando una aplicación Rails
+```shell
+rails new rottenpotatoes --skip-test-unit --skip-turbolinks --skip-spring
+```
+- Nota:
+La version de sqlite3 '~> 1.3.0' no me funciono a mí, pero con la 1.4.0 la aplicación corría bien.
+
+### Creando la migración 'create_movies' 
+![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/a7d1c91e-1529-40ab-b4f7-053cd82254ef)
+
+### Interactuando con la consola de ruby
+![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/0ad60f53-3cd0-475b-8948-95c9ea94c484)
+
+### Ejecutando seeders
+![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/7f544b56-a49b-4371-89cc-bc6bd51b8e62)
+
+## Crear rutas, acciones y vistas CRUD para películas
+### Crear rutas CRUD
+```ruby
+Rails.application.routes.draw do
+   resources :movies
+  root :to => redirect('/movies')
+end
+```
+Sale error porque aun no hemos definido un controlador ni sus vistas
+![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/bd3fe7cb-56bd-496f-9aff-800ee7a4b116)
+
+### Creando el controlador y sus vistas
+![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/e9ba76e2-a49c-4c0c-ac56-870f67a479d8)
+
+- Ejecutando el app rails:
+```ruby
+rails server
+```
+![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/6bb9d707-756a-4442-98db-1e760fe10ad7)
+
+## Desplegando en Heroku
+![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/5cca4ddb-4224-42af-89c8-bf5c78151a21)
+
+### Creando un base de datos en Heroku
+![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/17128e8e-d595-4ebe-880f-5283f584623c)
+### Subiendo nuestro proyecto al repositorio en Heroku
+![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/e369e4af-a8d3-4e0c-a990-f2640efe9a15)
+
+### Ejecutando las migraciones
+![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/b871af37-a86e-47e4-aca4-e88cd4acb141)
+
+- Probando la aplicación:
+`https://pure-shore-85181-d733abd95835.herokuapp.com`
+
+![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/0d10d3b7-808d-43ff-9284-7c8c1ed39261)
+
+Funcionando Correctamente.
+
 
