@@ -203,11 +203,14 @@ rails server
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/6bb9d707-756a-4442-98db-1e760fe10ad7)
 
 ## Desplegando en Heroku
+
+### Logueandonos y creando nuestra aplicación
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/5cca4ddb-4224-42af-89c8-bf5c78151a21)
 
 ### Creando un base de datos en Heroku
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/17128e8e-d595-4ebe-880f-5283f584623c)
-### Subiendo nuestro proyecto al repositorio en Heroku
+
+### Subiendo nuestro proyecto
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/e369e4af-a8d3-4e0c-a990-f2640efe9a15)
 
 ### Ejecutando las migraciones
