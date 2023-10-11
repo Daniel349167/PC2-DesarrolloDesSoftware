@@ -216,8 +216,7 @@ rails server
 ### Ejecutando las migraciones
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/b871af37-a86e-47e4-aca4-e88cd4acb141)
 
-- Probando la aplicación:
-`https://pure-shore-85181-d733abd95835.herokuapp.com`
+- Probando la aplicación: [https://pure-shore-85181-d733abd95835.herokuapp.com](https://pure-shore-85181-d733abd95835.herokuapp.com)
 
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/0d10d3b7-808d-43ff-9284-7c8c1ed39261)
 
