@@ -154,6 +154,63 @@ true
 5
 7
 ```
+# Parte2:
+
+## 1. Redirección tras creación exitosa
+
+Después de crear con éxito una película, en lugar de redirigir al usuario a la acción `Index`, se le redirige a la acción `Show` de la película recién creada.
+
+### Cambios en el controlador
+
+En `MoviesController`:
+
+```ruby
+# Antes
+format.html { redirect_to movie_url(@movie), notice: "Movie was successfully created." }
+
+# Después
+format.html { redirect_to @movie, notice: "Movie was successfully created." }
+```
+
+## 2. Campo description visible y editable
+Se ha hecho visible y editable el campo description en las vistas New y Edit.
+
+### Cambios en las vistas
+- En _form.html.erb:
+Añade el siguiente bloque para el campo description:
+```ruby
+<div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+</div>
+```
+
+- En movies_controller.rb
+Asegurarse que el campo description esté permitido en los parámetros:
+```ruby
+def movie_params
+  params.require(:movie).permit(:title, :rating, :description, :release_date)
+end
+```
+
+## 3. Manejo de excepciones para películas no encontradas
+Para mejorar la robustez de los métodos del controlador, se ha añadido manejo de excepciones en el método Show. Ahora, si un usuario intenta acceder a una película que no existe (por ejemplo, /movies/99999), en lugar de mostrar un error interno del servidor, se le redirige a la vista Index con un mensaje amigable.
+
+### Cambios en el controlador
+En MoviesController:
+
+```ruby
+ def show
+    begin
+      @movie = Movie.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      redirect_to movies_path, alert: "No existe ninguna película con ese ID." and return
+    end
+  end
+```
+- resultado:
+![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/b895f7a5-be69-4af2-b5a6-1eacc3ffb28c)
+
 
 # Parte3: Rail 
 ### Instalando versiones recomendadas:
