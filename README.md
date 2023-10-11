@@ -175,7 +175,7 @@ format.html { redirect_to @movie, notice: "Movie was successfully created." }
 ## 2. Campo description visible y editable
 Se ha hecho visible y editable el campo description en las vistas New y Edit.
 
-### Cambios en las vistas
+### Cambios en los ficheros
 - En _form.html.erb:
 Añade el siguiente bloque para el campo description:
 ```ruby
