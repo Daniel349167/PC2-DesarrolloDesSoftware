@@ -213,7 +213,7 @@ Resultado:
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/b895f7a5-be69-4af2-b5a6-1eacc3ffb28c)
 
 
-# Parte3: Rail 
+# Parte3: Rails 
 ### Instalando versiones recomendadas:
 
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/89b58a51-1aad-4a55-84b9-31ff8c8e2560)
