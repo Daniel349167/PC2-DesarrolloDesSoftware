@@ -208,7 +208,7 @@ Para mejorar la robustez de los métodos del controlador, se ha añadido manejo 
     end
   end
 ```
-- resultado:
+Resultado:
 
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/b895f7a5-be69-4af2-b5a6-1eacc3ffb28c)
 
