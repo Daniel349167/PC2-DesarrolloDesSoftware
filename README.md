@@ -197,7 +197,7 @@ end
 Para mejorar la robustez de los métodos del controlador, se ha añadido manejo de excepciones en el método Show. Ahora, si un usuario intenta acceder a una película que no existe (por ejemplo, /movies/99999), en lugar de mostrar un error interno del servidor, se le redirige a la vista Index con un mensaje amigable.
 
 ### Cambios en el controlador
-En MoviesController:
+- En MoviesController:
 
 ```ruby
  def show
@@ -209,6 +209,7 @@ En MoviesController:
   end
 ```
 - resultado:
+
 ![image](https://github.com/Daniel349167/PC2-DesarrolloDesSoftware/assets/62466867/b895f7a5-be69-4af2-b5a6-1eacc3ffb28c)
 
 
