@@ -124,8 +124,10 @@ end
 
 Estos métodos adicionales ofrecen una mayor flexibilidad y eficiencia al trabajar con la clase BinaryTree, permitiendo a los usuarios realizar consultas y operaciones más específicas en el árbol.
 
-- ejecutando la función main: ruby main.rb
-
+- Ejecutando la función main:
+```shell
+ruby main.rb
+```
 ```ruby
 # Pruebas
 puts letra_faltante("the quick brown box jumps over a lazy dog") # Debería devolver "f"
